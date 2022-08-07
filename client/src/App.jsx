@@ -6,35 +6,33 @@ import Login from "./pages/login/Login";
 import Profile from "./pages/profile/Profile";
 import Register from "./pages/register/Register";
 import Single from "./pages/single/Single";
+import { useContext } from "react";
+import { Context } from "./context/Context";
 
 function App() {
-  const currentUser = true;
+  const { user } = useContext(Context);
   return (
     <Router>
       <Topbar />
       <Routes>
         <Route exact path="/" element={<Homepage />} />
-        <Route exact path="/posts" element={<Homepage />} />
+        {/* <Route path="/posts" element={<Homepage />} /> */}
         <Route
-          exact
           path="/register"
-          element={currentUser ? <Homepage /> : <Register />}
+          element={user ? <Homepage /> : <Register />}
         />
         <Route
-          exact
           path="/login"
-          element={currentUser ? <Homepage /> : <Login />}
+          element={user ? <Homepage /> : <Login />}
         />
-        <Route exact path="/post/:id" element={<Single />} />
+        <Route path="/post/:id" element={<Single />} />
         <Route
-          exact
-          path="/create_post"
-          element={currentUser ? <CreatePost /> : <Login />}
+          path="/createpost"
+          element={user ? <CreatePost /> : <Login />}
         />
         <Route
-          exact
           path="/profile"
-          element={currentUser ? <Profile /> : <Login />}
+          element={user ? <Profile /> : <Login />}
         />
       </Routes>
     </Router>

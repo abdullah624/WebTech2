@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 import "./post.css";
 
 export default function Post({ post }) {
+  const PF = "http://localhost:5000/images/";
   return (
     <div className="post">
       {post.photo ? (
-        <img className="postImg" src={post.photo} alt="" />
+        <img className="postImg" src={PF + post.photo} alt="" />
       ) : (
         <img
           className="postImg"
@@ -17,7 +18,7 @@ export default function Post({ post }) {
       <div className="postInfo">
         <div className="postCats">
           {post.categories.map((c) => (
-            <span>{c}</span>
+            <span className="postCat">#{c}</span>
           ))}
         </div>
         <span className="postTitle">

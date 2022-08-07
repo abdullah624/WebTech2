@@ -23,7 +23,7 @@ router.put("/:id", async (req, res) => {
       res.status(500).json(err);
     }
   } else {
-    res.status(401).json("You can update only your own id.");
+    res.status(401).json("You can update only your own account.");
   }
 });
 
@@ -43,7 +43,7 @@ router.delete("/:id", async (req, res) => {
       res.status(404).json("User not found.");
     }
   } else {
-    res.status(401).json("You can update only your own id.");
+    res.status(401).json("You can delete only your own account.");
   }
 });
 

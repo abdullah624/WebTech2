@@ -1,8 +1,16 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../../context/Context";
 import "./topbar.css";
 
 export default function Topbar() {
-  const user = true;
+  const { user, dispatch } = useContext(Context);
+  const PF = "http://localhost:5000/images/";
+
+  const handleLogout = () => {
+    dispatch({ type: "LOGOUT" });
+  };
+
   return (
     <div className="top">
       <div className="topLeft">
@@ -19,37 +27,30 @@ export default function Topbar() {
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link createPost" to="/create_post">
+            <Link className="link" to="/createpost">
               Create Post
             </Link>
           </li>
-          <li className="topListItem">
-            <Link className="link" to="/profile">
-              Profile
-            </Link>
+          <li className="topListItem" onClick={handleLogout}>
+            {user && "Logout"}
           </li>
-          {user && <li className="topListItem">Logout</li>}
         </ul>
       </div>
       <div className="topRight">
         {user ? (
           <Link className="link" to="/profile">
-            <img
-              className="topImg"
-              src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-              alt=""
-            />
+            {user.profilePic?<img className="topImg" src={PF+user.profilePic} alt="" />:<i className="fas fa-user-circle profileIcon"></i>}
           </Link>
         ) : (
           <ul className="topList">
             <li className="topListItem">
               <Link className="link" to="/login">
-                LOGIN
+                Login
               </Link>
             </li>
             <li className="topListItem">
               <Link className="link" to="/register">
-                REGISTER
+                Register
               </Link>
             </li>
           </ul>

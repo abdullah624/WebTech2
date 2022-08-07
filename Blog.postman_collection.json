@@ -15,7 +15,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:5000/api/users/62eb92a9b7b573e0503b5d48",
+							"raw": "localhost:5000/api/users/62ed238b7664a91f69a08529",
 							"host": [
 								"localhost"
 							],
@@ -23,7 +23,7 @@
 							"path": [
 								"api",
 								"users",
-								"62eb92a9b7b573e0503b5d48"
+								"62ed238b7664a91f69a08529"
 							]
 						}
 					},
@@ -150,7 +150,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": \"abdullah\",\n    \"email\": \"abdullah@gmail.com\",\n    \"password\": \"123456\"\n}",
+							"raw": "{\n    \"username\": \"siyam2\",\n    \"email\": \"siyam2@gmail.com\",\n    \"password\": \"123456\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -179,7 +179,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": \"abdullah\",\n    \"password\": \"123456\"\n}",
+							"raw": "{\n    \"username\": \"siyam\",\n    \"password\": \"123456\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -299,7 +299,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"userId\": \"62eb4b11eef5d9e825a7af11\",\n    \"username\": \"abdullahupdated\",\n    \"password\": \"111111\"\n}",
+							"raw": "{\n    \"userId\": \"62ed238b7664a91f69a08529\",\n    \"username\": \"abdullah\",\n    \"password\": \"123456\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -307,7 +307,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:5000/api/users/62eb4b11eef5d9e825a7af11",
+							"raw": "localhost:5000/api/users/62ed238b7664a91f69a08529",
 							"host": [
 								"localhost"
 							],
@@ -315,7 +315,7 @@
 							"path": [
 								"api",
 								"users",
-								"62eb4b11eef5d9e825a7af11"
+								"62ed238b7664a91f69a08529"
 							]
 						}
 					},
@@ -328,7 +328,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": \"mokbul\",\n    \"title\": \"Updated title\",\n    \"desc\": \"Updated description\"\n}",
+							"raw": "{\n    \"username\": \"mokbul\",\n    \"title\": \"Updated title 2\",\n    \"desc\": \"Updated description\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -336,7 +336,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:5000/api/posts/62eb989ffbb39346b419b00b",
+							"raw": "localhost:5000/api/posts/62ef717f12b3ad46df85134b",
 							"host": [
 								"localhost"
 							],
@@ -344,7 +344,7 @@
 							"path": [
 								"api",
 								"posts",
-								"62eb989ffbb39346b419b00b"
+								"62ef717f12b3ad46df85134b"
 							]
 						}
 					},
@@ -362,7 +362,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"userId\": \"62eb4b11eef5d9e825a7af11\"\n}",
+							"raw": "{\n    \"userId\": \"62ed23c87664a91f69a0852f\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -370,7 +370,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:5000/api/users/62eb4b11eef5d9e825a7af11",
+							"raw": "localhost:5000/api/users/62ed23c87664a91f69a0852f",
 							"host": [
 								"localhost"
 							],
@@ -378,7 +378,7 @@
 							"path": [
 								"api",
 								"users",
-								"62eb4b11eef5d9e825a7af11"
+								"62ed23c87664a91f69a0852f"
 							]
 						}
 					},
@@ -399,7 +399,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:5000/api/posts/62eb989ffbb39346b419b00b",
+							"raw": "localhost:5000/api/posts/62ef4e7812b3ad46df851336",
 							"host": [
 								"localhost"
 							],
@@ -407,7 +407,7 @@
 							"path": [
 								"api",
 								"posts",
-								"62eb989ffbb39346b419b00b"
+								"62ef4e7812b3ad46df851336"
 							]
 						}
 					},

@@ -4,7 +4,7 @@
 
 .profileWrapper {
   flex: 9;
-  padding: 20px;
+  padding: 50px 200px;
 }
 
 .profileTitle {
@@ -13,15 +13,12 @@
   justify-content: space-between;
 }
 
-.profileUpdateTitle {
-  font-size: 30px;
-  margin-bottom: 20px;
-  color: lightcoral;
+.profileInfoContainer {
+  display: flex;
+  flex-direction: column;
 }
 
-.profileDeleteTitle {
-  color: red;
-  font-size: 12px;
+.mouse {
   cursor: pointer;
 }
 
@@ -37,9 +34,9 @@
 }
 
 .profilePic > img {
-  width: 70px;
-  height: 70px;
-  border-radius: 20px;
+  width: 170px;
+  height: 170px;
+  border-radius: 100px;
   object-fit: cover;
 }
 
@@ -47,12 +44,13 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: lightcoral;
+  background-color: #9e9e9ec2;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 10px;
+  margin-top: 122px;
+  margin-left: -40px;
   cursor: pointer;
 }
 
@@ -69,14 +67,46 @@
   border-bottom: 1px solid lightgray;
 }
 
-.profileSubmit{
-    width: 150px;
-    align-self: center;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    background-color: teal;
-    padding: 10px;
-    margin-top: 20px;
-    cursor: pointer;
+.profileInfo {
+  color: #000000cf;
+  margin-left: 12px;
+  margin-top: 40px;
+}
+
+.postCounts {
+  margin-top: 10px;
+  color: #000000c9;
+}
+.postCategories {
+  margin-top: 4px;
+  color: #000000c9;
+}
+
+.profileAction {
+  margin-right: 10px;
+  margin-left: auto;
+  margin-top: 130px;
+}
+
+.profileSubmit {
+  width: 150px;
+  align-self: center;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: teal;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.uploadPic {
+  width: 100px;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  background-color: teal;
+  padding: 5px;
+  margin-top: 7px;
+  margin-left: 27px;
+  cursor: pointer;
 }
